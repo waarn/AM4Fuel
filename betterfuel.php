@@ -36,7 +36,7 @@
 		compact: true,
 		onExpiry: function() {
 			if($('#fuelMain').is(':visible')){
-				popup('fuel.php','Fuel Market');
+				popup('https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php','Fuel Market');
 			}
 		}
 	});
