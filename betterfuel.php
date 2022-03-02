@@ -14,7 +14,7 @@
 		
 			<div class="btn-group d-flex" role="group">
 				<button class="btn btn-xs btn-primary w-100" onClick="popup('bonus.php?high=tanks','Bonus');">Increase capacity</button>
-				<button class='btn btn-danger btn-xs btn-block w-100 ' onClick="Ajax('fuel.php?mode=do&amount='+$('#amountInput').val(),'runme',this);"><span class='glyphicons glyphicons-usd'></span> Purchase</button>
+				<button class='btn btn-danger btn-xs btn-block w-100 ' onClick="Ajax('https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php?mode=do&amount='+$('#amountInput').val(),'runme',this);"><span class='glyphicons glyphicons-usd'></span> Purchase</button>
 			</div>
 			
 		 </div>
@@ -24,7 +24,7 @@
 
 	<script>
 		popMenu({
-		buttons: {Fuel: ['fuel.php?m=nonav','fuelMain',true,'gas-station'],Co2: ['co2.php','fuelMain',false,'leaf']}
+		buttons: {Fuel: ['https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php?m=nonav','fuelMain',true,'gas-station'],Co2: ['co2.php','fuelMain',false,'leaf']}
 	});
 		
 	$("#amountInput").inputFilter(function(value) {
@@ -51,7 +51,7 @@
 		$('#sumCost').html(number_format(cost));
 	});
 
-	fuel_startFuelChart([1230,900,790,360,1040,1370,1830,2470,2130,1350],['09:00:00','09:30:00','10:00:00','10:30:00','11:00:00','11:30:00','12:00:00','12:30:00','13:00:00','13:30:00']);
+	fuel_startFuelChart([1230,900,790,360,1040,1370,1830,2470,2130,750],['09:00:00','09:30:00','10:00:00','10:30:00','11:00:00','11:30:00','12:00:00','12:30:00','13:00:00','13:30:00']);
 
 
 	function fuel_startFuelChart(priceArray,timeArray) {
