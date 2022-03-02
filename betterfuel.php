@@ -1,13 +1,13 @@
 
 	<div id='fuelMain'>
 		<div class='row p-2 bg-light text-center'>
-		 <div class='col-6 p-2'><span class='s-text exo'>Current price</span><br><span class='text-danger'><b>$ 1,350</b></span></div>
+		 <div class='col-6 p-2'><span class='s-text exo'>Current price</span><br><span class='text-danger'><b>$ 750</b></span></div>
 		 <div class='col-6 p-2'><span class='s-text exo'>Price change</span><br><span id='fuelTimer'></span></div>
 		 <div class='col-6 p-2'><span class='s-text exo'>Capacity</span><br><span id='remCapacity'>8,961,013</span> / <span class='s-text'>9,000,000 Lbs</span></div>
 		 <div class='col-6 p-2'><span class='s-text exo'>Holding</span><br><span id='holding' class='font-weight-bold'>38,987</span> Lbs</div>
 
 		 <!--<div class='col-sm-12 p-2'><div id='slider'></div></div>-->
-		 <div class='col-sm-6 p-2 font-weight-bold'><span class='m-text exo'>Total price</span><br><b class='text-danger'>$<span id='sumCost'>1,350</span></b></div>
+		 <div class='col-sm-6 p-2 font-weight-bold'><span class='m-text exo'>Total price</span><br><b class='text-danger'>$<span id='sumCost'>750</span></b></div>
 		 <div class='col-sm-6 p-2 font-weight-bold'><span class='m-text exo'>Amount to purchase</span><br><input type='tel' class='form-control form-control-sm text-center' id='amountInput' value='1000' placeholder='Amount to purchase'></div>
 		 <div class='col-sm-12 p-2'>
 			
