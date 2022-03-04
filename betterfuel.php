@@ -14,7 +14,7 @@
 		
 			<div class="btn-group d-flex" role="group">
 				<button class="btn btn-xs btn-primary w-100" onClick="popup('bonus.php?high=tanks','Bonus');">Increase capacity</button>
-				<button class='btn btn-danger btn-xs btn-block w-100 ' onClick="Ajax('https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php?mode=do&amount='+$('#amountInput').val(),'runme',this);"><span class='glyphicons glyphicons-usd'></span> Purchase</button>
+				<button class='btn btn-danger btn-xs btn-block w-100 ' onClick="Ajax('https://waarn.github.io/AM4Fuel/betterfuel.php?mode=do&amount='+$('#amountInput').val(),'runme',this);"><span class='glyphicons glyphicons-usd'></span> Purchase</button>
 			</div>
 			
 		 </div>
@@ -24,7 +24,7 @@
 
 	<script>
 		popMenu({
-		buttons: {Fuel: ['https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php?m=nonav','fuelMain',true,'gas-station'],Co2: ['co2.php','fuelMain',false,'leaf']}
+		buttons: {Fuel: ['https://waarn.github.io/AM4Fuel/betterfuel.php?m=nonav','fuelMain',true,'gas-station'],Co2: ['co2.php','fuelMain',false,'leaf']}
 	});
 		
 	$("#amountInput").inputFilter(function(value) {
@@ -36,7 +36,7 @@
 		compact: true,
 		onExpiry: function() {
 			if($('#fuelMain').is(':visible')){
-				popup('https://raw.githubusercontent.com/waarn/AM4Fuel/main/betterfuel.php','Fuel Market');
+				popup('https://waarn.github.io/AM4Fuel/betterfuel.php','Fuel Market');
 			}
 		}
 	});
